@@ -1,3 +1,20 @@
+
+<nav>
+  <a [routerLink]="['First']">First</a>  
+</nav>
+
 <h1>
-  {{title}}
+  Hello {{title}}
 </h1>
+
+{{cities[0]}}
+
+<span>{{name}}</span>
+
+<ul>
+  <li *ngFor="#city of cities">
+    <h2>{{city}}</h2>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
