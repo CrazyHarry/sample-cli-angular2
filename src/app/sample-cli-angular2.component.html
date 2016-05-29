@@ -1,18 +1,16 @@
 
 <nav>
-  <a [routerLink]="['First']">First</a>  
+  <a [routerLink]="['First']">First</a>
+  <a [routerLink]="['Second']">Second</a>  
 </nav>
 
 <h1>
-  Hello {{title}}
+  {{title}} 
 </h1>
-
-{{cities[0]}}
-
 <span>{{name}}</span>
 
 <ul>
-  <li *ngFor="#city of cities">
+  <li *ngFor="let city of cities">
     <h2>{{city}}</h2>
   </li>
 </ul>
