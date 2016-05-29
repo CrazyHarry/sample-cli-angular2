@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { GdpComponent } from './gdp';
 import { FirstComponent } from './first';
+import { SecondComponent } from './second';
 import { RouteConfig , ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router-deprecated';
 
 
@@ -13,15 +13,16 @@ import { RouteConfig , ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/rout
 })
 
 @RouteConfig([
-  {}
+  {path:'/first', component: FirstComponent, name: 'First'},
+  {path:'/second', component: SecondComponent, name: 'Second'}  
   ])
 export class SampleCliAngular2AppComponent {
-  title = 'sample-cli-angular2 works!';
+  title = 'Welcome to sample-cli-angular2';
   name : string ;
   cities : string[] ;
 
   constructor(){
-    this.name = "My name is Sauleras"
+    this.name = "My name is Sauleras and I will show the most important parts of Angular 2"
     this.cities = ['sp','mg'];
   }
 }
