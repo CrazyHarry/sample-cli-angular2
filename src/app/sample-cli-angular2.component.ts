@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FirstComponent } from './first';
 import { SecondComponent } from './second';
+//import { ThirdComponent } from './third';
 import { RouteConfig , ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router-deprecated';
 
 
@@ -14,7 +15,8 @@ import { RouteConfig , ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/rout
 
 @RouteConfig([
   {path:'/first', component: FirstComponent, name: 'First'},
-  {path:'/second', component: SecondComponent, name: 'Second'}  
+  {path:'/second', component: SecondComponent, name: 'Second'},
+  //{path:'/third', component: ThirdComponent, name: 'Third'}
   ])
 export class SampleCliAngular2AppComponent {
   title = 'Welcome to sample-cli-angular2';
